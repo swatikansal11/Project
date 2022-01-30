@@ -1,0 +1,62 @@
+*{
+    box-sizing: content-box;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;          
+}
+.child{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 120px;
+    padding: 10px;
+    margin: 0.25em;
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+
+.FlexBH5{
+    color: lightgray;
+}
+
+.btn-meetFlexB{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 0;
+    border-radius: 4px;
+    font-size: 0.85em;
+    
+    /* hand icon appears on hover */
+    cursor: pointer;
+}
+
+.btn-primary-meetFlexB {
+    background-color: red;
+    color: white;
+}
+
+.btn-add-meetFlexB {
+    background-color: teal;
+    color: white;
+}
+
+@media(max-width:800px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;          
+    }
+    .child{
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 120px;
+        height: 100%;
+        padding: 10px;
+        margin: 0.25em;
+        border: 1px solid;
+        border-color: lightgray;
+        border-radius: 5px;
+    }
+}

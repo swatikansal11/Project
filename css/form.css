@@ -1,0 +1,78 @@
+.FormAdd{
+    display: flex;
+    flex-direction: column;
+}
+
+.forDate .input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+#date{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.forName .input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 0;
+    border-radius: 4px;
+    font-size: 0.85em;
+    
+    /* hand icon appears on hover */
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: rgb( 2, 104, 217 );
+    color: white;
+}
+
+
+#SearchForm{
+    display: inline;
+}
+
+#AddForm{
+    display:none;
+}
+.btn
+{
+    background-color: rgba(228, 232, 236, 0.87);
+    color: rgb(12, 11, 11);
+    border: none;
+    cursor: pointer;
+    padding: 2px 12px 3px 12px;
+    
+    text-decoration: none;
+
+}
+
+@media (min-width: 992px) {
+    .form-group > label {
+        flex-basis: 30%;
+    }
+    
+    .form-group > .form-control {
+        /* allow the input to grow - hence "1" */
+        /* let the input take up any remaining width available - hence "auto" */
+        flex: 1 0 auto;
+    }
+
+    .form-group .action-buttons {
+        margin-left: 30%;
+    }
+}

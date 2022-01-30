@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting</title>
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href='external/normalize.css'>
+
+    <link rel="stylesheet" href="Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/HamBur.css">
+
+    <link rel="stylesheet" href="css/meet.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/MeetFlexB.css">
+    
+
+</head>
+
+<body>
+    <script src="js/jquery-3.6.0.js"></script>
+    <nav class="main-menu">
+        <ul class='list-unstyled list-inline container'>
+            <li><a href="cal.html">Calendar</a></li>
+            |
+            <li><a href="meet.html" class="active">Meetings</a></li>
+            |
+            <li><a href="teams.html">Teams</a></li>
+
+            <span class="RLinks">
+
+                <li><a href="hello.html">Hello!</a></li>
+                |
+                <li><a href="logout.html">Logout</a></li>
+            </span>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h1>Meeting</h1>
+            <hr>
+        </section>
+        <br>
+        <section>
+            <span href="#" id="FillAdd" class="btn active">Filter/Search Meetings
+            <!--<button id="FillAdd"  >Filter/Search Meetings</button>-->
+            </span>
+            <span href="#" id="AddMeeting" class="btn">Add a Meeting
+               <!-- <button id="AddMeeting"  >Add a Meeting</button>-->
+            </span>
+        </section>
+        <br>
+        <section class="MeetSec">
+            
+            <br>
+            <form id="SearchForm" method="post" class="FormAdd">
+                <h2 class="MeetH2">Search for Meetings</h2>
+            <hr>
+
+                <div class="forDate">
+                    <label for="date">Date</label>
+                    <div class="forDateOpt">
+                        <select id="date" name="date" class="input">
+                            <option value="">-- Select Date ---</option>
+                            <option value="all">ALL</option>
+                            <option value="past">PAST</option>
+                            <option value="today">TODAY</option>
+                            <option value="upcoming">UPCOMING</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="forName">
+                    <label for="search">Search for</label>
+                    <div class="forSearch">
+                        <input type="text" id="search" name="search" aria-describedby="name-help" class="input"
+                            placeholder="Search Using the Words Which Describe the Meeting" />
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="forDate">
+                    <div class="action-buttons">
+                        <button type="submit" class="btn btn-primary">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+      
+            <form id="AddForm" method="post" class="FormAdd">
+                <h2 class="MeetH2">Add a new meeting</h2>
+            <hr>
+
+                <div class="forDate">
+                    <label for="date">Date</label>
+                    <div class="forDateOpt">
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+                <div class="fortime">
+                    <label for="time">Start time (hh:mm)</label>
+                    <div class="forDateOpt">
+                        <input type="time" id="time" name="time">
+                    </div>
+                </div>
+
+                <br>
+                <div class="fortime">
+                    <label for="time">End time (hh:mm)</label>
+                    <div class="forDateOpt">
+                        <input type="time" id="time" name="time">
+                    </div>
+                </div>
+
+                <br>
+                <div class="forName">
+                    <label for="search">Description</label>
+                    <div class="forSearch">
+                        <input type="text" id="search" name="search" aria-describedby="name-help" class="input"
+                            placeholder="What is agenda of the meeting?" />
+                    </div>
+                </div>
+
+                <br>
+                <div class="forName">
+                    <label for="search">EmailIDs of attendees,or team's short</label>
+                    <div class="forSearch">
+                        <input type="text" id="search" name="search" aria-describedby="name-help" class="input"
+                            placeholder="john@example.com,@annual-day,mark@example.com" />
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="forDate">
+                    <div class="action-buttons">
+                        <button type="submit" class="btn btn-primary">
+                            Add Meeting
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Meetings Matching the Search Criteria</h2>
+            <hr>
+        </section>
+
+        <section>
+            <div class="parent">
+                <div class="child">
+                    <h4>Customer Acquisiton Campaign</h4>
+                    <h5>@customer-acquisition</h5>
+
+                    <h5 class="FlexBH5">Team to Come Up with Strategies to Win</h5>
+
+                    <button type="submit" class="btn-meetFlexB btn-primary-meetFlexB">Excuse Yourself </button>
+
+                    <hr>
+
+                    <p><strong>Members</strong>: john@example.com, jane@example.com</p>
+
+                    <button type="submit" class="btn-meetFlexB btn-add-meetFlexB">Add</button>
+
+                </div>
+                <div class="child">
+                    <h4>Customer Acquisiton Campaign</h4>
+                    <h5>@customer-acquisition</h5>
+
+                    <h5 class="FlexBH5">Team to Come Up with Strategies to Win</h5>
+
+                    <button type="submit" class="btn-meetFlexB btn-primary-meetFlexB">Excuse Yourself </button>
+
+                    <hr>
+
+                    <p><strong>Members</strong>: john@example.com, jane@example.com</p>
+
+                    <button type="submit" class="btn-meetFlexB btn-add-meetFlexB">Add</button>
+                </div>
+        </section>
+
+    </main>
+
+    <script>
+        $("#FillAdd").click(function(){
+    $("#AddForm").hide().attr("formnovalidate");
+    $("#SearchForm").toggle();
+});
+
+$("#AddMeeting").click(function(){
+    $("#SearchForm").hide().attr("formnovalidate");
+    $("#AddForm").toggle();
+});
+
+
+$("document").ready(function(){
+    $("#AddForm").hide();
+});
+
+
+
+
+
+      /* 
+        $(document).ready(function(){
+        $("#FillAdd").click(function(){
+            $('#SearchForm').toggle();
+        });
+    });
+    $(document).ready(function(){
+        $("#AddMeeting").click(function(){
+            $('#AddForm').toggle();
+        });
+    });
+    
+    */
+    
+    
+    
+    /*
+    $('#AddForm').hide();
+
+$('#FillAdd').click(function(e) {
+  e.preventDefault();
+  $(this).addClass('active');
+  $('#AddMeeting').removeClass('active');
+  $('#SearchForm').show();
+  $('#AddForm').hide();
+ // $('#edit-email').focus(); //Should appear after $('.login__form').show(); because if it's before that, the register form doesn't exist in the DOM
+});
+
+$('#AddMeeting').click(function(e) {
+  e.preventDefault();
+  $(this).addClass('active');
+  $('#FillAdd').removeClass('active');
+  $('#AddForm').show();
+  $('#SearchForm').hide();
+ // $('#edit-firstname').focus(); //Should appear after $('.register__form').show(); because if it's before that, the register form doesn't exist in the DOM
+});*/
+    </script>
+</body>
+
+</html>

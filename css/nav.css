@@ -1,0 +1,26 @@
+.main-menu{
+    padding: 1em 0em;
+    background-color: #ddd;
+}
+
+.main-menu a{
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    color: #888;
+    text-decoration: none;
+    padding: 0.25em 0.5em;
+}
+
+.main-menu a:first-child{
+    padding: left 0;
+}
+
+.main-menu a.active{
+    color: black;
+}
+
+.RLinks{
+    float: right;
+    display: block;
+    text-decoration: none;
+}
